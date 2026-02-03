@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   const linkClass = ({ isActive }) =>
@@ -22,16 +22,16 @@ export default function Navbar() {
 
             {/* Nav Links */}
             <nav className="flex gap-2">
-                            <Link to="/" className={linkClass}>
+                            <NavLink to="/" className={linkClass}>
                 Dashboard
-              </Link>
-              <Link to="/employees" className={linkClass}>
+              </NavLink>
+              <NavLink to="/employees" className={linkClass}>
                 Employees
-              </Link>
+              </NavLink>
 
-              <Link to="/attendance" className={linkClass}>
+              <NavLink to="/attendance" className={linkClass}>
                 Attendance
-              </Link>
+              </NavLink>
 
 
             </nav>
